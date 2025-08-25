@@ -80,8 +80,8 @@ function BankForm() {
 function NumberList(title, numbers) {
   const $section = document.createElement("section");
 
-  const $h3 = document.createElement("h3");
-  $h3.textContent = `${title} (${numbers.length})`;
+  const $h2 = document.createElement("h2");
+  $h2.textContent = `${title} (${numbers.length})`;
 
   const $ul = document.createElement("ul");
   for (const n of numbers) {
@@ -90,7 +90,7 @@ function NumberList(title, numbers) {
     $ul.appendChild($li);
   }
 
-  $section.append($h3, $ul);
+  $section.append($h2, $ul);
   return $section;
 }
 
